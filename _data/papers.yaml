@@ -1,0 +1,44 @@
+- authors: Jamie F Olson and Kathleen M Carley.
+  year: 2009
+  title: Combining geographic information and network analysis
+  journal: In Twenty Ninth International Sunbelt Social Network Conference, CA 
+
+- authors: George B Davis, Jamie F Olson and Kathleen M Carley.
+  year: 2008
+  title: Unsupervised Plan Detection with Factor Graphs.
+  link: /documents/papers/davis08unsupervised.pdf
+  journal:  In Proc. Sensor-KDD, ACM-SIGKDD Las Vegas. (Best Workshop Paper)
+
+- authors: Jamie F Olson and Kathleen M Carley.
+  year: 2008
+  title: "Distributed Coordination and Network Structure: Experimental Results from Simulation."
+  journal: In Proc. AAAI-COIN, Chicago, IL.
+
+- authors: Jamie F Olson and Kathleen M Carley.
+  year: 2008
+  title: Summarization and Information Loss in Network Analysis.
+  link: /documents/papers/lacts2008-olson.pdf
+  journal: In Proc. Link Analysis, Counterterrorism, and Security Workshop, SIAM International Conference on Data Mining, Atlanta, GA.
+
+- authors: Jamie F Olson and Kathleen M Carley.
+  year: 2007
+  title: "Geo-spatially enabled network analysis: Varying resolutions of data and analysis."
+  journal: USMA 2007 Network Science Workshop, NY.
+
+- authors: A. Csizmar Dalal and J. Olson.
+  year: 2007
+  title: Feature Selection for Prediction of User-Perceived Streaming Media Quality.
+  link: /documents/papers/spects2007.pdf
+  journal: Proceedings of the 2007 International Symposium on Performance Evaluation of Computer and Telecommunication Systems (SPECTS), San Diego, California, July.
+
+- authors: A. Csizmar Dalal, D. Musicant, J. Olson, B. McMenamy, S. Benzaid, B. Kazez, E. Bolan.
+  year: 2007
+  title: Predicting User-Perceived Quality Ratings from Streaming Media Data.
+  link: /documents/papers/icc2007.pdf
+  journal: Proceedings of the IEEE International Conference on Communications (ICC 2007).
+
+- authors: David R. Musicant, Janara M. Christensen, Jamie F. Olson
+  year: 2007
+  title: Supervised Learning by Training on Aggregate Outputs
+  link: /documents/papers/musicantd-AggregateLearning.pdf
+  journal: Proceedings of the Seventh IEEE International Conference on Data Mining, IEEE Press.

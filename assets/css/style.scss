@@ -1,0 +1,284 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "bootswatch/spacelab/variables";
+$font-size-base: 1.35 * $font-size-base;
+@import "bootstrap";
+@import "bootswatch/spacelab/bootswatch";
+
+.sticky-element {
+    padding: 0;
+    margin: 0;
+}
+
+.stuck {
+    position: fixed;
+    top: 0;
+}
+
+
+.slogon {
+    margin-bottom: $line-height-base * 0.5;
+    margin-top: $line-height-base * 0.5;
+    text-align: right;
+    font-size: $font-size-base * 1.25;
+    font-weight: 150;
+    line-height: $line-height-base * 1.25;
+}
+
+.name { 
+    font-size: $font-size-base * 1.75; // ~26px
+    margin-bottom:0px;
+    text-align: right;
+}
+
+.landing .slogon {
+    margin-bottom: $line-height-base * 3.25;
+    margin-top: $line-height-base * 1.25;
+    text-align: left;
+    font-size: $font-size-base * 2.5;
+    font-weight: 150;
+    line-height: $line-height-base * 2.25;
+}
+
+.landing .name { 
+    font-size: $font-size-base * 3.50; // ~26px
+    text-align: left;
+    font-weight: 600;
+    margin-top: $font-size-base * 3.0; 
+    margin-bottom: $font-size-base * 2.0; 
+}
+
+.landing .hero-unit {
+    padding: 10px 50px 20px;
+}
+
+h1.title { 
+    font-size: $font-size-base * 3.25; 
+    font-weight: bold;
+    margin-top: $font-size-base * 1.5; 
+}
+
+article {
+    h1 { font-size: $font-size-base * 2.00; } // ~38px
+    h2 { font-size: $font-size-base * 1.75; } // ~32px
+    h3 { font-size: $font-size-base * 1.50; } // ~24px
+    h4 { font-size: $font-size-base * 1.25; } // ~18px
+    h5 { font-size: $font-size-base * 1.00; }
+    h6 { font-size: $font-size-base * 0.85; } // ~12px
+
+
+  header {
+    time {
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: lighten($text-color, 20);
+      display: block;
+      margin: 30px 0;
+    }
+
+    h1 {
+      color: $text-color;
+      font-size: $font-size-base * 2.25;
+      margin: 0 0 30px 0;
+    }
+  }
+
+  img {
+    box-shadow: #999 0px 0px 5px;
+    display: block;
+  }
+
+  .entry-content-asset {
+    margin: 20px 0;
+    img {
+        width: 100%;
+        display: block;
+      }
+  }
+
+  .photo-full {
+    margin: 0 0 20px 0;
+    clear: both;
+  }
+
+  .photo-left {
+    margin-bottom: 20px;
+  }
+
+  .photo-right {
+    margin: 0 0 20px 20px;
+  }
+
+  p {
+    color: lighten($text-color, 10);
+    font-size: 1.2rem;
+    line-height: 150%;
+    margin: 30px 0;
+
+    strong {
+      font-weight: 600;
+    }
+
+    em {
+      font-style: italic;
+    }
+    em:hover {
+      background: lighten($link-color, 40);
+      color: lighten($link-color, 10);
+    }
+    code {
+      //@include font-code(1rem);
+      background: lighten($body-bg, 65);
+      padding: 3px;
+      line-height: 110%;
+      border-radius: 3px;
+      display: inline-block;
+    }
+    a {
+      color: $link-color;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  footer {
+    clear: both;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-bottom: #ccc 1px solid;
+    min-height: 20px;
+
+    .metadata {
+      strong {
+        color: lighten($text-color, 10);
+      }
+      ul {
+        display: inline-block;
+      }
+      li {
+        display: inline-block;
+        color: lighten($text-color, 20);
+        a {
+          padding: 0 5px;
+          color: lighten($text-color, 20);
+          text-decoration: none;
+        }
+        a:hover {
+          color: $link-color;
+          text-decoration: underline;
+        }
+      }
+      li:after {
+        content: ' / ';
+      }
+      li:last-child {
+        a {
+          padding: 0 0 0 5px;
+        }
+      }
+      li:last-child:after {
+        content: '';
+      }
+    }
+
+    .nav-back {
+      text-align: right;
+      a {
+        color: $link-color;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+}
+
+
+#footer-page {
+  padding: 10px 0;
+  background: #333;
+//  background-image(linear-gradient(darken($text-color, 10) 1%, $text-color 5%));
+//LESS  #gradient > .vertical(darken($text-color, 10), $text-color);
+  @include gradient-horizontal(darken($text-color, 10), $text-color, 0%, 100%);
+  border: 1px solid $navbar-default-border;
+  border-radius: $navbar-border-radius;
+  @include box-shadow(0 1px 4px rgba(0,0,0,.065));
+}
+
+
+#colophon {
+  clear: both;
+//  @include font-title(300);
+  padding: 0 0 10px 0;
+  margin: 0;
+  border-bottom: darken($text-color, 10) 1px solid;
+  font-size: 0.9rem;
+  color: lighten($text-color, 40);
+}
+
+#colophon-a {
+  line-height: 125%;
+  a {
+    color: lighten($text-color, 80);
+  }
+}
+
+#colophon-b {
+  text-align: right;
+  color: lighten($text-color, 5);
+  a {
+    color: lighten($text-color, 10);
+  }
+
+}
+
+#badges {
+  font-size: 0.8rem;
+  padding: 10px 0 0px 0;
+  margin: 0;
+}
+
+#badges-a {
+  li {
+    display: inline-block;
+    margin: 10px 5px 0 0;
+
+    a {
+      display: inline-block;
+      padding: 5px;
+      background: lighten($text-color, 20);
+      border-radius: 4px;
+      color: lighten($text-color, 60);
+      text-decoration: none;
+      text-shadow: darken($text-color, 10) 0 1px 1px;
+    }
+    a:hover {
+      background: darken($text-color, 20);
+      color: lighten($text-color, 60);
+    }
+  }
+}
+
+#badges-b {
+  text-align: right;
+  ul {
+    margin: 0;
+
+    li {
+      display: inline-block;
+    }
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
+
+

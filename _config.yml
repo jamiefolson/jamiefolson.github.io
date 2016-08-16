@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Jamie F Olson: Problem Solver
+title: "Jamie F Olson: Problem Solver"
 email: self@jfolson.com
 description: > 
   Jamie F Olson is a Data Scientist and Big Data engineer with experience
@@ -21,6 +21,13 @@ github_username:  jamiefolson
 # Build settings
 markdown: kramdown
 
+projects: '/projects/'
+research: '/research/'
+about: '/about/'
+home: '/'
+blog: '/blog/'
+
 gems: 
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-less

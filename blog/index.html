@@ -1,0 +1,12 @@
+---
+title: "Blog"
+layout: page
+---
+
+    {% for post in site.posts %}
+    <article class="well">
+        <h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <span class="pull-right">{{ post.date | date: "%b %-d, %Y" }}</span></h1>
+        {{ post.excerpt }}
+    </article>
+    {% endfor %}

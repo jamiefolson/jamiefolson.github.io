@@ -1,1 +1,43 @@
-My Page
+---
+layout: landing
+---
+
+<div class="container">
+<!-- Masthead
+================================================== -->
+<header class="landing" id="overview">
+  <div class="row">
+    <div class="col-md-6">
+      <h1 class="name">Jamie F Olson</h1>
+      <p class="slogon">Problem Solver.</p>
+    </div>
+  </div>
+</header>
+
+<div class="row-fluid matched-column-container landing">
+    <div class="col-md-4">
+        <div class="jumbotron">
+            <h3>Projects</h3>
+            <p class="matched-column">Check out various projects I've worked on, from R packages for
+                Hive and SQL-generation to a library for manipulation and
+                analysis of dynamic networks.</p> 
+            <p> <a href="{{ '/projects/' | prepend: site.baseurl}}" class="btn btn-primary btn-lg" role="button" >Learn more</a> </p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="jumbotron">
+            <h3>Research</h3>
+            <p class="matched-column">Find references and discussions of my research interests, which 
+                center around modeling complex social systems.</p> 
+            <p> <a href="{{ '/research/' | prepend: site.baseurl}}" class="btn btn-primary btn-lg" role="button">Learn more</a> </p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="jumbotron">
+            <h3>Blog</h3>
+            <p class="matched-column">I write about a variety of things, primarily related to technology and computer science.</p> 
+            <p> <a href="{{ '/blog/' | prepend: site.baseurl}}" class="btn btn-primary btn-lg" role="button">Learn more</a> </p>
+        </div>
+    </div>
+</div>
+</div>

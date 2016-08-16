@@ -1,0 +1,88 @@
+
+</br></br></br>
+
+    </div><!-- /container -->
+     <!-- Footer
+      ================================================== -->
+    
+    <hr>
+    <footer id="footer-page">
+        <div class="container">
+            <div id="colophon" class="row-fluid">
+                <div id="colophon-a" class="col-md-6">
+                    You should follow me on <a href="https://twitter.com/#!/jamie_f_olson">
+                        Twitter <i class="icon-twitter"></i></a> or 
+                        <a href="https://plus.google.com/109945867357511565489?rel=author"
+                                rel="author">Google <i class="icon-google-plus"></i></a>. 
+                        You could fork one of my <a
+                            href="https://github.com/jamiefolson">repos on GitHub <i class="icon-github"></i></a>.
+
+                   
+                </div>
+                <div id="colophon-b" class="col-md-6">
+                    &copy; 2016 <span itemprop="author">Jamie F Olson</span>, all rights reserved.
+                    <br>
+                    Made with <a href="http://middlemanapp.com/">Middleman</a>, styled with 
+                    <a href="http://bootswatch.com/spacelab/">Bootswatch Spacelab</a> 
+                    <br>
+                    by <a href="http://thomaspark.me/">Thomas Park</a>
+                        (<a href="mailto:hello@thomaspark.homaspark.me">hello@thomaspark.me</a>),
+                    based on <a target="_blank" href="http://twitter.github.com/bootstrap/">Bootstrap</a>
+                    <br>
+                    with icons from <a target="_blank" href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a> 
+                    and web fonts from <a target="_blank" href="http://www.google.com/webfonts">Google</a>.
+                </div>
+            </div>
+            <div id="badges" class="row-fluid">
+                <div id="badges-a" class="span6">
+                    <% if is_blog_article? or current_page.url.start_with? blog.options.prefix %>
+                        <ul>
+                             <li><% link_to '/blog/feed.rss', :type => "application/rss+xml", :rel => "alternate", :relative => false do %>
+                                <i class="icon-rss"></i> Blog RSS
+                            <%end%>
+                            <li><% link_to '/blog/atom.xml', :type => "application/atom+xml", :rel => "alternate", :relative => false do %>
+                                <i class="icon-rss"></i> Blog XML
+                            <%end%>
+                            </li>
+                            <li><%= link_to 'Blog JSON', '/blog/atom.json', :type => "application/json", :rel => "alternate", :relative => true %></li>
+                            <% if is_blog_article? %>
+                                <li><%= link_to 'Article XML', current_article.url + 'atom.xml', :type => "application/atom+xml", :rel => "alternate", :relative => true %></li>
+                                <li><%= link_to 'Article JSON', current_article.url + 'atom.json', :type => "application/json", :rel => "alternate", :relative => true %></li>
+                            <% elsif current_page.url.start_with?(blog.options.prefix+"/tag") %>
+                                <li><% link_to current_page.url + 'feed.rss', :type => "application/rss+xml", :rel => "alternate", :relative => false do %>
+                                    <i class="icon-rss"></i> Tag RSS
+                                <%end%>
+                                 <li><% link_to current_page.url + 'atom.xml', :type => "application/atom+xml", :rel => "alternate", :relative => false do %>
+                                    <i class="icon-rss"></i> Tag XML
+                                <%end%>
+                                </li>
+                                <li><%= link_to 'Tag JSON', current_page.url + 'atom.json', :type => "application/json", :rel => "alternate", :relative => true %></li>
+                            <% elsif current_page.url == "/blog/" %>
+                            <% end %>
+                        </ul>
+                    <% end %>
+                </div>
+            <div id="badges-b" class="span6">
+                <%= partial "coderwall" %>
+            </div>
+        </div>
+        </footer>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="{{ '/assets/bootstrap/javascripts/bootstrap.min.js' | prepend: site.baseurl}}"></script> 
+    <script src="{{ '/assets/javascript/bootswatch.js' | prepend: site.baseurl}}"></script> 
+    <script src="{{ '/assets/javascript/jquery-waypoints.js' | prepend: site.baseurl}}"></script> 
+    <script src="{{ '/assets/javascript/jquery-waypoints-mysticky.js' | prepend: site.baseurl}}"></script> 
+    <script src="{{ '/assets/javascript/application.js' | prepend: site.baseurl}}"></script> 
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','hhtp://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-39681608-1', 'jfolson.com');
+      ga('send', 'pageview');
+    </script>
